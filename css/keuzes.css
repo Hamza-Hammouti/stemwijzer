@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    font-family: Inter,sans-serif;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    padding: 21px 29px;
+    background-color: #233fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+    text-align: left;
+    transition: all .15s;
+    cursor: pointer;
+}
+
+nav {
+    width: 99.9%;
+    height: 65px;
+}
+
+.top-left-nav {
+    width: 200px;
+    height: 48px;
+    margin-top: 18px;
+    margin-left: 33px;
+    float: left;
+}
+
+.top-left-nav img {
+    width: 60%;
+    margin-top: 12px;
+    margin-left: 23px;   
+}
+
+.button--back:hover, .button--share:hover {
+    background-color: #d4dadc;
+}
+
+.button--back {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: url(../img/download.svg) #e7eaeb 50%/24px no-repeat;
+    float: left;
+    padding: 0;
+}
+
+.top-right-nav {
+    width: 190px;
+    height: 37px;
+    float: right;
+    margin-top: 27px;
+}
+
+.app__nav-counter {
+    margin-right: 16px;
+    border: 1px solid #e7eaeb;
+    border-radius: 80px;
+    padding: 8px 12px;
+    transition: opacity .15s .15s;
+    float: left;
+    font-size: 17px;
+}
+
+.top-right-nav img {
+    margin-top: 10px;
+}
+
+.main_cont {
+    width: 51%;
+    height: 575px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.main_cont h1 {
+    color: #233fff;
+    font-size: 36px;
+}
+
+.main_cont p {
+    font-size: 36px;
+    margin-top: 15px;
+    line-height: 46px;
+}
+
+.title_question_cont {
+    width: 88%;
+    height: 180px;
+    padding-left: 32px;
+}
+
+.button_keuzes_cont {
+    width: 61%;
+    height: 64px;
+    padding-left: 32px;
+}
+
+.statement__tab-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 20px;
+    color: #000;
+    line-height: 130%;
+    text-align: left;
+    transition: border-color .15s;
+    cursor: pointer;
+    background: none;
+    float: left;
+}
+
+.statement__tab-button--parties:before {
+    background-image: url(../img/chat.svg);
+}
+
+.statement__tab-button:after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid #233fff;
+    border-radius: 12px;
+    transition: opacity .15s;
+    opacity: 0;
+}
+
+.statement__tab-button:hover {
+    border-color: #505050;
+}
+
+.statement__tab-button:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    transition: all .15s;
+}
+
+.statement__tab-button:hover:before {
+    transform: scale(1.1);
+}
+
+.statement__tab-button+.statement__tab-button {
+    margin-left: 24px;
+}
+
+.statement__tab-button--more-info:before {
+    background-image: url(../img/book.svg);
+}
+
+.eens_oneens_cont {
+    width: 72.5%;
+    height: 80px;
+    margin-top: 255px;
+    padding-left: 32px;
+    float: left;
+}
+
+.eens_oneens_cont:before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    width: 26%;
+    height: 3px;
+    background: #e7eaeb;
+}
+
+.statement__button {
+    z-index: 2;
+}
+
+.button--agree {
+    background-color: #20a84b;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        border: 3px solid transparent;
+        border-radius: 16px;
+        padding: 21px 29px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        color: #fff;
+        text-align: left;
+        transition: all .15s;
+        cursor: pointer;
+        float: left;
+        margin-right: 24px;
+}
+
+.button--agree:hover {
+    background-color: #1b8b3e;
+}
+
+.button--agree:before {
+    background-image: url(../img/agree.svg);
+}
+
+.button--agree:before, .button--disagree:before, .button--neither:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: transform .15s;
+}
+
+.button--agree:hover:before {
+    transform-origin: 20% 80%;
+    transform: rotate(-10deg) translateY(-2px);
+}
+
+.button--neither {
+    background-color: #e7eaeb;
+    color: #000;
+    float: left;
+    margin-right: 24px;
+}
+
+.button--neither:hover {
+    background-color: #d4dadc;
+}
+
+
+.button--neither:before {
+    background-image: url(../img/neither.svg);
+}
+
+.button--disagree:hover {
+    background-color: #d61337;
+}
+
+.button--disagree {
+    background-color: #eb2045;
+}
+
+.button--disagree:before {
+    background-image: url(../img/disagree.svg);
+}
+
+.button--disagree:after {
+    border-color: #eb2045;
+}
+
+.button--disagree:hover:before {
+    transform-origin: 80% 20%;
+    transform: rotate(-10deg) translateY(2px);
+}
+
+.statement__skip {
+    margin-left: 80px;
+}
+
+.skip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e7eaeb;
+    border-radius: 64px;
+    padding: 8px 12px;
+    background: #fff;
+    line-height: 120%;
+    color: rgba(0,0,0,.4);
+    transition: all .15s;
+    white-space: nowrap;
+    cursor: pointer;
+    float: right;
+    margin-top: 270px;
+    font-size: 16px;
+}
+
+.skip:before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid #233fff;
+    border-radius: 64px;
+    transition: opacity .15s;
+    opacity: 0;
+}
+
+.skip:after {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url(../img/skip.svg) 50%/contain repeat-x;
+    transition: all .15s;
+}
+
+.skip:hover {
+    border-color: #d0d3d3;
+}
+
+.skip:hover:after {
+    transform: translateX(6px);
+}
